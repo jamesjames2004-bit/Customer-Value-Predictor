@@ -44,7 +44,7 @@ def get_agent_response(recency_days, frequency_orders, hist_monetary, avg_order_
 
     response = client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-20b",
         temperature=0.4,
     )
 
